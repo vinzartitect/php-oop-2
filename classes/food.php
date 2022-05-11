@@ -12,6 +12,7 @@ class food extends product{
     public $weight;
     public $expireDate;
 
+    // costruttore
     function __construct( $_name, $_category, $_price, $_typeOfAnimal, $_typeOfFood, $_brand, $_weight, $_expireDate ){
         //setter del padre product
         parent::__construct( $_name, $_category, $_price, $_typeOfAnimal );
