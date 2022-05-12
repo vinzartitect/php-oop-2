@@ -13,6 +13,8 @@ Il pagamento avviene con la carta di credito, che non deve essere scaduta. -->
 require __DIR__ . '/classes/product.php';
 require __DIR__ . '/classes/toy.php';
 require __DIR__ . '/classes/food.php';
+require __DIR__ . '/classes/user.php';
+require __DIR__ . '/classes/creditCard.php';
 
 //istanziamo un prodotto tipo
 $pappa = new product ( 'Crocchette', 'cibo', 35, 'cane' );
@@ -46,6 +48,19 @@ echo $pastone -> getBrand() . '<br>';
 echo $pastone -> getWeight() . '<br>';
 echo $pastone -> getExpireDate() . '<br>';
 
+// istanziamo un ipotetico cliente
+$cliente = new user ( 'Giovanni', 'Storti', 'gvn@libero.it', true );
 
+echo $cliente -> getFirstName() . '<br>';
+echo $cliente -> getSurname() . '<br>';
+echo $cliente -> getEmail() . '<br>';
+echo $cliente -> getSigned() . '<br>';
+echo $cliente -> getSconto() . '<br>';
+
+
+// istanziamo un ipotetica carta di pagamento
+$cardz = new creditCard ( 2594632187965412, 2025, 123, 'Poste Italiane', 532 );
+
+var_dump( $cardz );
 
 ?>
