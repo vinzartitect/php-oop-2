@@ -59,7 +59,7 @@ echo $cliente -> getSconto() . '<br>';
 
 
 // istanziamo un ipotetica carta di pagamento
-$cardz = new creditCard ( 2594632187965412, 2025, 123, 'Poste Italiane', 532 );
+$cardz = new creditCard ( "2594632187965412", 2025, 123, 'Poste Italiane', 532 );
 
 var_dump( $cardz );
 

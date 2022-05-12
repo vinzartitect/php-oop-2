@@ -21,11 +21,13 @@ class creditCard{
         $this -> bank = $bank;
         $this -> balance = $balance;
 
-        if(is_numeric($number) && strlen($number) == 16 && strlen($cvv) == 3 && $expireYear > 2022){
+        if( is_numeric($number) && strlen($number) == 16 && strlen($cvv) == 3 && $expireYear > 2022 ){
             $this -> isValid = true;
         } else {
             $this -> isValid = false;
+            throw new Exception('Card not valid');
         }
+
     }
 
 
