@@ -53,8 +53,8 @@ class food extends product{
 
 
     // getter del figlio ( quelli del padre sono ereditati )
-    function getBrand(){
-        return $this -> brand;
+    function getTypeOfFood(){
+        return $this -> typeOfFood;
     }
 
     function getBrand(){

@@ -2,7 +2,7 @@
 
 // class che contiene il prodotto tipo
 
-class Product {
+class product {
     public $name;
     public $category;
     public $price;
