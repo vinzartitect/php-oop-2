@@ -5,12 +5,11 @@ include_once __DIR__ . "/product.php";
 // questa classe erediterà le info del padre product
 
 class toy extends product{
-
     // proprietà esclusive del figlio toy
-    public $weight;
-    public $color;
-    public $material;
-    public $measures;
+    protected $weight;
+    protected $color;
+    protected $material;
+    protected $measures;
 
     // costruttore
     function __construct( $_name, $_category, $_price, $_typeOfAnimal, $_weight, $_color, $_material, $_measures ){

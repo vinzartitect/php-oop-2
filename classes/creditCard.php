@@ -2,12 +2,12 @@
 
 class creditCard{
 
-    public $number;
-    public $expireYear;
-    public $cvv;
-    public $bank;
-    public $balance;
-    public $isValid;
+    protected $number;
+    protected $expireYear;
+    protected $cvv;
+    protected $bank;
+    protected $balance;
+    protected $isValid;
 
     public function __construct( $number, $expireYear, $cvv, $bank, $balance, $isValid = false ){
 

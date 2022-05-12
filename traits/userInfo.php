@@ -2,8 +2,8 @@
 
 trait userInfo {
 
-    public $firstName;
-    public $surname;
+    protected $firstName;
+    protected $surname;
 
     // lista dei setter
     public function setFirstName($_firstName){

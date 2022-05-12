@@ -3,13 +3,13 @@
 // class che contiene il prodotto tipo
 
 class product {
-    public $name;
-    public $category;
-    public $price;
-    public $typeOfAnimal;
+    protected $name;
+    protected $category;
+    protected $price;
+    protected $typeOfAnimal;
     
     // costruttore
-    function __construct( $_name, $_category, $_price, $_typeOfAnimal ){
+    public function __construct( $_name, $_category, $_price, $_typeOfAnimal ){
         $this -> setName($_name);
         $this -> setCategory($_category);
         $this -> setPrice($_price);

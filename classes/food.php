@@ -7,10 +7,10 @@ include_once __DIR__ . "/product.php";
 class food extends product{
 
     // proprietà esclusive del figlio food
-    public $typeOfFood;
-    public $brand;
-    public $weight;
-    public $expireDate;
+    protected $typeOfFood;
+    protected $brand;
+    protected $weight;
+    protected $expireDate;
 
     // costruttore
     function __construct( $_name, $_category, $_price, $_typeOfAnimal, $_typeOfFood, $_brand, $_weight, $_expireDate ){

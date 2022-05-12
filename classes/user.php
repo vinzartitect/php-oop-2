@@ -8,9 +8,9 @@ class user {
 
     use userInfo;
 
-    public $email;
-    public $_signed;
-    public $_sconto;
+    protected $email;
+    protected $_signed;
+    protected $_sconto;
 
     //costruttore 
     public function __construct($_firstName, $_surname, $_email, $_signed){
